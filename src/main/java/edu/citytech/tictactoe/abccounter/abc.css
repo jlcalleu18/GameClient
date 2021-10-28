@@ -1,0 +1,46 @@
+.lblTitle{
+	-fx-font-size: 17pt;
+    -fx-alignment: center ;
+}
+.abc-old {
+	-fx-border-color:black;
+	-fx-padding: 10 10 10 10;
+	-fx-min-width: 60;
+	-fx-min-height: 60;
+}
+.abc {
+	-fx-border-color:black;
+	-fx-padding: 30 30 30 30;
+	-fx-min-width: 85;
+	-fx-min-height: 85;
+	-fx-font-size: 15pt;
+}
+.num {
+	-fx-border-color:black;
+	-fx-padding: 5 5 5 5;
+	-fx-min-width: 37;
+	-fx-min-height: 37;
+}
+
+.grid {
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+.highLight{
+	-fx-background-color: pink;
+}
+
+.span1, .span2, .span3 {
+	-fx-font-size: 22pt;
+}
+
+.span2 {
+	-fx-fill: red;
+	-fx-font-weight: bold;
+}
+
+.span3 {
+	-fx-fill: green;
+	-fx-font-style: italic;
+}

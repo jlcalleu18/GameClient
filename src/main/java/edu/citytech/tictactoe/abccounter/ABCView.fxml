@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="822.0" prefWidth="463.0" stylesheets="@abc.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.tictactoe.abccounter.ABCController">
+   <children>
+      <GridPane fx:id="gridABC" layoutX="42.0" layoutY="107.0" styleClass="grid">
+
+         <children>
+            <Button mnemonicParsing="false" styleClass="abc" text="A" />
+            <Button mnemonicParsing="false" styleClass="abc" text="B" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" styleClass="abc" text="C" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" styleClass="abc" text="D" GridPane.columnIndex="3" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+
+      </GridPane>
+      <RadioButton layoutX="42.0" layoutY="54.0" mnemonicParsing="false" onAction="#selectionMode" selected="true" text="ABC" userData="A">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgMode" />
+         </toggleGroup>
+      </RadioButton>
+
+      <RadioButton layoutX="42.0" layoutY="79.0" mnemonicParsing="false" onAction="#selectionMode" text="CBA" toggleGroup="$tgMode" userData="Z" />
+      <RadioButton layoutX="106.0" layoutY="54.0" mnemonicParsing="false" onAction="#selectionMode" text="123" toggleGroup="$tgMode" userData="1" />
+      <RadioButton layoutX="107.0" layoutY="78.0" mnemonicParsing="false" onAction="#selectionMode" text="321" toggleGroup="$tgMode" userData="3" />
+      <RadioButton layoutX="170.0" layoutY="54.0" mnemonicParsing="false" onAction="#selectionMode" text="5,10,15" toggleGroup="$tgMode" userData="5" />
+      <RadioButton layoutX="171.0" layoutY="79.0" mnemonicParsing="false" onAction="#selectionMode" text="15,10,5" toggleGroup="$tgMode" userData="15" />
+      <ComboBox fx:id="cbHighlight" layoutX="252.0" layoutY="65.0" onAction="#highLightAction" prefHeight="26.0" prefWidth="162.0" />
+      <Label layoutX="268.0" layoutY="37.0" prefHeight="17.0" prefWidth="69.0" text="Highlight" />
+      <Group />
+   <TextFlow layoutX="42.0" layoutY="20.0">
+      <Text fx:id="first" styleClass="span1">A</Text>
+      <Text fx:id="second" styleClass="span2">B</Text>
+      <Text fx:id="third" styleClass="span3">C</Text>
+   </TextFlow>
+   </children>
+
+</AnchorPane>
