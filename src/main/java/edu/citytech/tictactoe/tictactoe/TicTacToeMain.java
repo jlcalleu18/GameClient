@@ -1,4 +1,4 @@
-package edu.citytech.tictactoe;
+package edu.citytech.tictactoe.tictactoe;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

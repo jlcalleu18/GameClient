@@ -15,10 +15,10 @@ public class ABCMain extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         String name  = "ABCView.fxml";
-        Parent root = FXMLLoader.load(getClass().getResource(name));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(name));
         stage.setScene( new Scene(root));
         stage.setTitle("ABC Count");
         stage.show();
-        stage.setResizable(false);
+//        stage.setResizable(false);
     }
 }

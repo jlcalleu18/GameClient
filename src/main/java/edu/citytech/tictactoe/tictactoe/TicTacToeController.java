@@ -1,6 +1,7 @@
-package edu.citytech.tictactoe;
+package edu.citytech.tictactoe.tictactoe;
 
 import com.jbbwebsolutions.http.utility.JSONGet;
+import edu.citytech.tictactoe.MainController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -15,7 +16,7 @@ import java.util.Arrays;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
-public class TicTacToeController implements Initializable {
+public class TicTacToeController extends MainController implements Initializable {
 
     @FXML
     private FlowPane fpGames;

@@ -1,6 +1,7 @@
 package edu.citytech.tictactoe.abccounter;
 
 import com.jbbwebsolutions.http.utility.JSONGet;
+import edu.citytech.tictactoe.MainController;
 import edu.citytech.tictactoe.abccounter.model.Mode;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -22,7 +23,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.ResourceBundle;
 
-public class ABCController implements Initializable {
+public class ABCController extends MainController implements Initializable {
 
     @FXML
     private GridPane gridABC;
