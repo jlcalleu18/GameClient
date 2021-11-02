@@ -16,7 +16,7 @@ public class ABCMain extends Application {
     public void start(Stage stage) throws Exception {
         String name  = "ABCView.fxml";
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(name));
-        stage.setScene( new Scene(root));
+        stage.setScene(new Scene(root));
         stage.setTitle("ABC Count");
         stage.show();
 //        stage.setResizable(false);

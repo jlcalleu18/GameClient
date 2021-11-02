@@ -10,13 +10,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,6 +39,9 @@ public class ABCController extends MainController implements Initializable {
 
     @FXML
     private ComboBox<Mode> cbHighlight;
+
+//    @FXML
+//    private AnchorPane anchorPane;
 
     @FXML
     void selectionMode(ActionEvent event) {
@@ -122,6 +122,9 @@ public class ABCController extends MainController implements Initializable {
         }
         var $123List = FXCollections.observableArrayList(list);
         cbHighlight.setItems($123List);
+
+        var stage = super.anchorPane.getScene();
+        super.anchorPane.setMinHeight(573);
     }
 
     public void alphabets(boolean reverse) {
