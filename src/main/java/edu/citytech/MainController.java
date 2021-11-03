@@ -1,4 +1,4 @@
-package edu.citytech.tictactoe;
+package edu.citytech;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

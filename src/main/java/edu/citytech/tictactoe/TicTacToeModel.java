@@ -1,4 +1,4 @@
-package edu.citytech.tictactoe.tictactoe;
+package edu.citytech.tictactoe;
 
 import java.util.Arrays;
 

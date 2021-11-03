@@ -1,4 +1,4 @@
-package edu.citytech.tictactoe.growthrate;
+package edu.citytech.growthrate;
 
 import java.text.DecimalFormat;
 

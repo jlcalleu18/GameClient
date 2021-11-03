@@ -1,8 +1,8 @@
-package edu.citytech.tictactoe.abccounter;
+package edu.citytech.abccounter;
 
 import com.jbbwebsolutions.http.utility.JSONGet;
-import edu.citytech.tictactoe.MainController;
-import edu.citytech.tictactoe.abccounter.model.Mode;
+import edu.citytech.MainController;
+import edu.citytech.abccounter.model.Mode;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

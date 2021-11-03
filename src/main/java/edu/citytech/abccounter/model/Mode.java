@@ -1,4 +1,4 @@
-package edu.citytech.tictactoe.abccounter.model;
+package edu.citytech.abccounter.model;
 
 public class Mode {
     private String mode;

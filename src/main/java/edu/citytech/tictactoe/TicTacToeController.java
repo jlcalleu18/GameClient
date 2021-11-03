@@ -1,7 +1,7 @@
-package edu.citytech.tictactoe.tictactoe;
+package edu.citytech.tictactoe;
 
 import com.jbbwebsolutions.http.utility.JSONGet;
-import edu.citytech.tictactoe.MainController;
+import edu.citytech.MainController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

@@ -1,4 +1,4 @@
-package edu.citytech.tictactoe.abccounter;
+package edu.citytech.abccounter;
 
 public class ABCService {
 
