@@ -58,8 +58,9 @@
         <menus>
           <Menu mnemonicParsing="false" text="Display Mode">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#tictactoeMode" text="TicTacToe" />
+                  <MenuItem mnemonicParsing="false" onAction="#tictactoeMode" text="TicTacToe" />
                   <MenuItem mnemonicParsing="false" onAction="#abcCounterMode" text="ABC Counter" />
+                  <MenuItem mnemonicParsing="false" onAction="#growthRateMode" text="Growth Rate" />
             </items>
           </Menu>
         </menus>

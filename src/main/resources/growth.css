@@ -1,0 +1,7 @@
+.lblTitle{
+    -fx-font-size: 17pt;
+    -fx-alignment: center ;
+}
+.txt {
+    -fx-border-color:red;
+}

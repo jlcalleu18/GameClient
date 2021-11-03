@@ -22,6 +22,11 @@ public class MainController {
     void tictactoeMode(ActionEvent event) {
         selectMode("TicTacToeView.fxml");
     }
+    @FXML
+    void growthRateMode(ActionEvent event) {
+        selectMode("GrowthRateView.fxml");
+    }
+
 
     public void selectMode(String fxml){
         try {

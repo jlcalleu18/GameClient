@@ -82,30 +82,8 @@ public class ABCController extends MainController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         alphabets(false);
         load(true);
-       // loadABCOptions();
-    }
 
-//    private void loadABCOptions(){
-//
-//        var list = new ArrayList<Mode>();
-//        list.add(new Mode("n", "none"));
-//        list.add(new Mode("v", "vowel"));
-//        list.add(new Mode("c", "consonant"));
-//
-//        var abcList = FXCollections.observableArrayList(list);
-//        cbHighlight.setItems(abcList);
-//    }
-//    private void load123Options(){
-//
-//        var listNum = new ArrayList<Mode>();
-//        listNum.add(new Mode("n", "none"));
-//        listNum.add(new Mode("e", "even numbers"));
-//        listNum.add(new Mode("o", "odd numbers"));
-//
-//        var $123List = FXCollections.observableArrayList(listNum);
-//
-//        cbHighlight.setItems($123List);
-//    }
+    }
 
     public void load(boolean abc){
 
