@@ -33,6 +33,7 @@
             <version>5.3.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.jbbwebsolutions.http</groupId>
             <artifactId>httpToJson</artifactId>
@@ -53,6 +54,15 @@
         <resources>
             <resource>
                 <directory>src/main/java</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.java</include>
+                    <include>**/*.fxml</include>
+                    <include>**/*.css</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
                     <include>**/*.java</include>

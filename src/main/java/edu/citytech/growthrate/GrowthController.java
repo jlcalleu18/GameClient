@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
 import java.text.DecimalFormat;
@@ -34,25 +35,26 @@ public class GrowthController extends MainController {
     void calculate(ActionEvent event) {
         if(txtyears.getText().isEmpty()){
             rate.setText("Enter a value in the Text Field");
-            txtyears.getStyleClass().add("txt");
+            txtyears.setStyle("-fx-border-color:red");
             return;
         }
         if (txtending.getText().isEmpty()){
             rate.setText("Enter a value in the Text Field");
-            txtending.getStyleClass().add("txt");
+            txtending.setStyle("-fx-border-color:red");
             return;
         }
         if (txtbeginning.getText().isEmpty()){
             rate.setText("Enter a value in the Text Field");
-            txtbeginning.getStyleClass().add("txt");
+            txtbeginning.setStyle("-fx-border-color:red");
             return;
         }
         if (txtTotal.getText().isEmpty()) {
             rate.setText("Enter a value in the Text Field");
-            txtTotal.getStyleClass().add("txt");
+            txtTotal.setStyle("-fx-border-color:red");
             return;
         }
 
+        try{
         double years= Double.parseDouble(txtyears.getText());
         double endValue= Double.parseDouble(txtending.getText());
         double startValue= Double.parseDouble(txtbeginning.getText());
@@ -61,17 +63,61 @@ public class GrowthController extends MainController {
         var result = GrowthRate.getGrowRate(years,endValue,startValue,totalDiv);
         DecimalFormat df = new DecimalFormat("#%");
 
-        rate.setText("Rate of return is "+result+" or "+df.format(result));
+        rate.setText("Rate of return is "+df.format(result)+" or "+result);
+        rate.setStyle("-fx-text-fill: blue;");
+
+        txtyears.setStyle("-fx-border-color: #25eb67;");
+        txtending.setStyle("-fx-border-color: #25eb67;");
+        txtbeginning.setStyle("-fx-border-color: #25eb67;");
+        txtTotal.setStyle("-fx-border-color: #25eb67;");
+
         System.out.println(result);
+        }catch (Exception e){
+            rate.setText("Invalid input, only numbers, please");
+            rate.setStyle("-fx-text-fill: red;");
+        }
 
     }
+
+
     @FXML
-    void click(MouseEvent event) {
-        rate.setText("");
-        txtyears.getStyleClass().remove("txt");
-        txtending.getStyleClass().remove("txt");
-        txtbeginning.getStyleClass().remove("txt");
-        txtTotal.getStyleClass().remove("txt");
+    void handle(KeyEvent event) {
+
+        String years= txtyears.getText();
+        String endValue= txtending.getText();
+        String startValue= txtbeginning.getText();
+        String totalDiv= txtTotal.getText();
+
+        if(isValid(years)){
+            txtyears.setStyle("-fx-border-color:red");
+            rate.setText("Invalid input");
+            rate.setStyle("-fx-text-fill: red;");
+        }else if(isValid(endValue)){
+            txtending.setStyle("-fx-border-color:red");
+            rate.setText("Invalid input");
+            rate.setStyle("-fx-text-fill: red;");
+        }else if(isValid(startValue)){
+            txtbeginning.setStyle("-fx-border-color:red");
+            rate.setText("Invalid input");
+            rate.setStyle("-fx-text-fill: red;");
+        }else if(isValid(totalDiv)){
+            txtTotal.setStyle("-fx-border-color:red");
+            rate.setText("Invalid input");
+            rate.setStyle("-fx-text-fill: red;");
+        }else {
+            txtyears.setStyle("");
+            txtending.setStyle("");
+            txtbeginning.setStyle("");
+            txtTotal.setStyle("");
+            rate.setText("");
+        }
+
+
     }
+    public boolean isValid(String s){
+        String regex="\\d{0,9}([\\.]\\d{0,7})?";
+        return !s.matches(regex);//returns true if input and regex matches otherwise false;
+    }
+
 
 }

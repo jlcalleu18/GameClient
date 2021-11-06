@@ -33,19 +33,19 @@
             <Font size="14.0" />
          </font></Label>
       <Button fx:id="btncalculate" layoutX="167.0" layoutY="333.0" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
-      <TextField fx:id="txtyears" alignment="CENTER_RIGHT" layoutX="219.0" layoutY="85.0" onMouseClicked="#click" prefHeight="26.0" prefWidth="119.0">
+      <TextField fx:id="txtyears" alignment="CENTER_RIGHT" layoutX="219.0" layoutY="85.0" onKeyTyped="#handle" prefHeight="26.0" prefWidth="119.0">
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <TextField fx:id="txtending" alignment="CENTER_RIGHT" layoutX="219.0" layoutY="135.0" onMouseClicked="#click" prefHeight="26.0" prefWidth="119.0">
+      <TextField fx:id="txtending" alignment="CENTER_RIGHT" layoutX="219.0" layoutY="135.0" onKeyTyped="#handle" prefHeight="26.0" prefWidth="119.0">
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <TextField fx:id="txtbeginning" alignment="CENTER_RIGHT" layoutX="219.0" layoutY="188.0" onAction="#click" onMouseClicked="#click" prefHeight="26.0" prefWidth="119.0">
+      <TextField fx:id="txtbeginning" alignment="CENTER_RIGHT" layoutX="219.0" layoutY="188.0" onKeyTyped="#handle" prefHeight="26.0" prefWidth="119.0">
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <TextField fx:id="txtTotal" alignment="CENTER_RIGHT" layoutX="219.0" layoutY="236.0" onMouseClicked="#click" prefHeight="26.0" prefWidth="119.0">
+      <TextField fx:id="txtTotal" alignment="CENTER_RIGHT" layoutX="219.0" layoutY="236.0" onKeyTyped="#handle" prefHeight="26.0" prefWidth="119.0">
          <font>
             <Font size="14.0" />
          </font></TextField>
