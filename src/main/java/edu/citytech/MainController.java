@@ -26,6 +26,10 @@ public class MainController {
     void growthRateMode(ActionEvent event) {
         selectMode("GrowthRateView.fxml");
     }
+    @FXML
+    void retirementMode(ActionEvent event) {
+        selectMode("RetirementView.fxml");
+    }
 
 
     public void selectMode(String fxml){

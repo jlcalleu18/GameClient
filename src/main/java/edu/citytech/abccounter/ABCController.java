@@ -2,7 +2,7 @@ package edu.citytech.abccounter;
 
 import com.jbbwebsolutions.http.utility.JSONGet;
 import edu.citytech.MainController;
-import edu.citytech.abccounter.model.Mode;
+import edu.citytech.abccounter.model.Model;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -38,7 +38,7 @@ public class ABCController extends MainController implements Initializable {
     private ToggleGroup tgMode;
 
     @FXML
-    private ComboBox<Mode> cbHighlight;
+    private ComboBox<Model> cbHighlight;
 
 //    @FXML
 //    private AnchorPane anchorPane;
@@ -87,16 +87,16 @@ public class ABCController extends MainController implements Initializable {
 
     public void load(boolean abc){
 
-        ArrayList<Mode> list = new ArrayList<Mode>();
-        list.add(new Mode("n", "none"));
+        ArrayList<Model> list = new ArrayList<Model>();
+        list.add(new Model("n", "none"));
         if (abc){
-            list.add(new Mode("v", "vowel"));
-            list.add(new Mode("c", "consonant"));
+            list.add(new Model("v", "vowel"));
+            list.add(new Model("c", "consonant"));
         }else{
-            list.add(new Mode("e", "even numbers"));
-            list.add(new Mode("o", "odd numbers"));
-            list.add(new Mode("6", "every 6 numbers"));
-            list.add(new Mode("con", "contains #4 or 9"));
+            list.add(new Model("e", "even numbers"));
+            list.add(new Model("o", "odd numbers"));
+            list.add(new Model("6", "every 6 numbers"));
+            list.add(new Model("con", "contains #4 or 9"));
         }
         var $123List = FXCollections.observableArrayList(list);
         cbHighlight.setItems($123List);

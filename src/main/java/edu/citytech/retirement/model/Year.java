@@ -2,7 +2,7 @@ package edu.citytech.retirement.model;
 
 public class Year {
     private float endingBalance=0;
-    private float interestedEarned=0;
+    private float interestEarned=0;
     private float no=0;
     private float startingBalance=0;
     private float yearlyDeposit=0;
@@ -15,12 +15,12 @@ public class Year {
         this.endingBalance = endingBalance;
     }
 
-    public float getInterestedEarned() {
-        return interestedEarned;
+    public float getInterestEarned() {
+        return interestEarned;
     }
 
-    public void setInterestedEarned(float interestedEarned) {
-        this.interestedEarned = interestedEarned;
+    public void setInterestEarned(float interestEarned) {
+        this.interestEarned = interestEarned;
     }
 
     public float getNo() {
@@ -51,7 +51,7 @@ public class Year {
     public String toString() {
         return "Year{" +
                 "endingBalance=" + endingBalance +
-                ", interestedEarned=" + interestedEarned +
+                ", interestEarned=" + interestEarned +
                 ", no=" + no +
                 ", startingBalance=" + startingBalance +
                 ", yearlyDeposit=" + yearlyDeposit +

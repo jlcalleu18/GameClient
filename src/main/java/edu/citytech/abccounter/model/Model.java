@@ -1,10 +1,10 @@
 package edu.citytech.abccounter.model;
 
-public class Mode {
+public class Model {
     private String mode;
     private String description;
 
-    public Mode(String mode, String description) {
+    public Model(String mode, String description) {
         this.mode = mode;
         this.description = description;
     }

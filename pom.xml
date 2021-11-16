@@ -57,15 +57,12 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>**/*.java</include>
-                    <include>**/*.fxml</include>
-                    <include>**/*.css</include>
                 </includes>
             </resource>
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
-                    <include>**/*.java</include>
                     <include>**/*.fxml</include>
                     <include>**/*.css</include>
                 </includes>

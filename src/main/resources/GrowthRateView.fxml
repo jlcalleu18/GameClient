@@ -60,6 +60,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#tictactoeMode" text="TicTacToe" />
                   <MenuItem mnemonicParsing="false" onAction="#abcCounterMode" text="ABC Counter" />
                   <MenuItem mnemonicParsing="false" onAction="#growthRateMode" text="Growth Rate" />
+                  <MenuItem mnemonicParsing="false" onAction="#retirementMode" text="Retirement" />
                </items>
             </Menu>
          </menus>
