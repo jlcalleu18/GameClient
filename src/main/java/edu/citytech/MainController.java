@@ -15,29 +15,30 @@ public class MainController {
 
     @FXML
     void abcCounterMode(ActionEvent event) {
-        selectMode("ABCView.fxml");
+        selectMode("ABCView.fxml", "ABC View ");
     }
 
     @FXML
     void tictactoeMode(ActionEvent event) {
-        selectMode("TicTacToeView.fxml");
+        selectMode("TicTacToeView.fxml", "TicTacToe View");
     }
     @FXML
     void growthRateMode(ActionEvent event) {
-        selectMode("GrowthRateView.fxml");
+        selectMode("GrowthRateView.fxml", "Growth Rate View");
     }
     @FXML
     void retirementMode(ActionEvent event) {
-        selectMode("RetirementView.fxml");
+        selectMode("RetirementView.fxml", "Retirement View");
     }
 
 
-    public void selectMode(String fxml){
+    public void selectMode(String fxml, String title){
         try {
 
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(fxml));
             var stage = (Stage) anchorPane.getScene().getWindow();
             stage.setScene(new Scene(root));
+            stage.setTitle(title);
             stage.show();
         }
         catch (Exception e){

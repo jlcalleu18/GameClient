@@ -50,7 +50,7 @@
     </dependencies>
 
     <build>
-        <finalName>calle-client</finalName>
+        <finalName>client-calle</finalName>
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -84,7 +84,7 @@
                         <archive>
                             <manifest>
                                 <addClasspath>true</addClasspath>
-                                <mainClass>edu.citytech.growthrate.GrowthRateMain</mainClass>
+                                <mainClass>edu.citytech.retirement.RetirementMain</mainClass>
                             </manifest>
                         </archive>
                     </configuration>

@@ -11,32 +11,32 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="632.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.retirement.RetirementController">
+<AnchorPane fx:id="anchorPane" prefHeight="650.0" prefWidth="571.0" stylesheets="@retirement.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.retirement.RetirementController">
    <children>
       <Label layoutX="256.0" layoutY="14.0" text="Retirement" />
-      <TableView fx:id="tvRetirement" layoutX="37.0" layoutY="155.0" prefHeight="446.0" prefWidth="498.0">
+      <TableView fx:id="tvRetirement" layoutX="26.0" layoutY="95.0" prefHeight="506.0" prefWidth="520.0">
         <columns>
           <TableColumn prefWidth="33.0" text="No">
               <cellValueFactory>
                   <PropertyValueFactory property="no" />
               </cellValueFactory>
           </TableColumn>
-          <TableColumn prefWidth="112.0" text="Starting Balance">
+          <TableColumn fx:id="tcStartingBalance" prefWidth="105.0" text="Starting Balance">
             <cellValueFactory>
                 <PropertyValueFactory property="startingBalance" />
             </cellValueFactory>
           </TableColumn>
-            <TableColumn prefWidth="111.0" text="Yearly Deposit">
+            <TableColumn fx:id="tcYearlyDeposit" prefWidth="111.0" text="Yearly Deposit">
                 <cellValueFactory>
                     <PropertyValueFactory property="yearlyDeposit" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn prefWidth="120.0" text="Interest Earned">
+            <TableColumn fx:id="tcInterestEarned" prefWidth="117.0" text="Interest Earned">
                 <cellValueFactory>
                     <PropertyValueFactory property="interestEarned" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn prefWidth="120.0" text="Ending Balance">
+            <TableColumn fx:id="tcEndingBalance" prefWidth="136.0" text="Ending Balance">
                 <cellValueFactory>
                     <PropertyValueFactory property="endingBalance" />
                 </cellValueFactory>
@@ -55,8 +55,9 @@
                </Menu>
            </menus>
        </MenuBar>
-      <TextField fx:id="txtYears" layoutX="87.0" layoutY="86.0" prefHeight="25.0" prefWidth="90.0" />
-      <Label layoutX="37.0" layoutY="90.0" text="years" />
-      <Button layoutX="355.0" layoutY="78.0" mnemonicParsing="false" onAction="#process" text="Process" />
+      <TextField fx:id="txtYears" layoutX="77.0" layoutY="59.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label layoutX="26.0" layoutY="63.0" text="years" />
+      <Button layoutX="225.0" layoutY="59.0" mnemonicParsing="false" onAction="#process" text="Process" />
+      <Label layoutX="26.0" layoutY="619.0" text="Calle, Jorge" />
    </children>
 </AnchorPane>
