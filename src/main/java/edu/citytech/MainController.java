@@ -30,6 +30,10 @@ public class MainController {
     void retirementMode(ActionEvent event) {
         selectMode("RetirementView.fxml", "Retirement View");
     }
+    @FXML
+    void propertiesMode(ActionEvent event) {
+        selectMode("PropertiesView.fxml", "Properties View");
+    }
 
 
     public void selectMode(String fxml, String title){

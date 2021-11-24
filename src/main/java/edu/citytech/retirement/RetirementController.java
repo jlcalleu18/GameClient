@@ -64,3 +64,8 @@ public class RetirementController extends MainController implements Initializabl
         oYears.addAll(years);
     }
 }
+/*float TotalPrice = 0;
+        TotalPrice = tvRetirement.getItems().stream().map(
+                (item) -> item.getYearlyDeposit()).reduce(TotalPrice, (accumulator, _item) -> accumulator + _item);
+
+        lbDeposit.setText(String.valueOf(TotalPrice));*/
