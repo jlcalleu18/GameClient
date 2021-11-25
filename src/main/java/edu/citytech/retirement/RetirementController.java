@@ -92,22 +92,25 @@ public class RetirementController extends MainController implements Initializabl
         float totalPrice = 0;
         if (getRetirement.equals("start")){
             totalPrice = tvRetirement.getItems().stream().map(
-                    (item) -> item.getStartingBalance()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+                    Year::getStartingBalance).reduce(totalPrice, Float::sum);
             return totalPrice;
         }else if (getRetirement.equals("year")){
             totalPrice = tvRetirement.getItems().stream().map(
-                    (item) -> item.getYearlyDeposit()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+                    Year::getYearlyDeposit).reduce(totalPrice, Float::sum);
             return totalPrice;
         }else if (getRetirement.equals("interest")){
             totalPrice = tvRetirement.getItems().stream().map(
-                    (item) -> item.getInterestEarned()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+                    Year::getInterestEarned).reduce(totalPrice, Float::sum);
             return totalPrice;
         }else if (getRetirement.equals("ending")){
             totalPrice = tvRetirement.getItems().stream().map(
-                    (item) -> item.getEndingBalance()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+                    Year::getEndingBalance).reduce(totalPrice, Float::sum);
             return totalPrice;
         }else{
             return totalPrice;
+            /*  totalPrice = tvRetirement.getItems().stream().map(
+                    (item) -> item.getEndingBalance()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+            return totalPrice;*/
         }
     }
 }
