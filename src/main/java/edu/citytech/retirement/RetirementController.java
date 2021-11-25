@@ -1,12 +1,14 @@
 package edu.citytech.retirement;
 
 import edu.citytech.MainController;
+import edu.citytech.retirement.model.Retirement;
 import edu.citytech.retirement.model.Year;
 import javafx.collections.ObservableList;
 import javafx.collections.ObservableListBase;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -33,7 +35,20 @@ public class RetirementController extends MainController implements Initializabl
 
     @FXML
     private TableColumn<Year, Float> tcEndingBalance;
+    @FXML
+    private Label lbStart;
 
+    @FXML
+    private Label lbYear;
+
+    @FXML
+    private Label lbInterest;
+
+    @FXML
+    private Label lbEnding;
+
+    @FXML
+    private Label lbNo;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         var years = RetirementDataLayer.getRetirement("30").getYears();
@@ -55,6 +70,11 @@ public class RetirementController extends MainController implements Initializabl
             var cell = new CustomTableCell();
             return cell;
         });
+        lbNo.setText("30");
+        lbStart.setText(String.valueOf(getTotal("start")));
+        lbYear.setText(String.valueOf(getTotal("year")));
+        lbInterest.setText(String.valueOf(getTotal("interest")));
+        lbEnding.setText(String.valueOf(getTotal("ending")));
     }
     @FXML
     void process(ActionEvent event) {
@@ -62,10 +82,33 @@ public class RetirementController extends MainController implements Initializabl
         var years = RetirementDataLayer.getRetirement(txtYears.getText()).getYears();
         ObservableList<Year> oYears = tvRetirement.getItems();
         oYears.addAll(years);
+        lbNo.setText(txtYears.getText());
+        lbStart.setText(String.valueOf(getTotal("start")));
+        lbYear.setText(String.valueOf(getTotal("year")));
+        lbInterest.setText(String.valueOf(getTotal("interest")));
+        lbEnding.setText(String.valueOf(getTotal("ending")));
+    }
+    public float getTotal(String getRetirement){
+        float totalPrice = 0;
+        if (getRetirement.equals("start")){
+            totalPrice = tvRetirement.getItems().stream().map(
+                    (item) -> item.getStartingBalance()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+            return totalPrice;
+        }else if (getRetirement.equals("year")){
+            totalPrice = tvRetirement.getItems().stream().map(
+                    (item) -> item.getYearlyDeposit()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+            return totalPrice;
+        }else if (getRetirement.equals("interest")){
+            totalPrice = tvRetirement.getItems().stream().map(
+                    (item) -> item.getInterestEarned()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+            return totalPrice;
+        }else if (getRetirement.equals("ending")){
+            totalPrice = tvRetirement.getItems().stream().map(
+                    (item) -> item.getEndingBalance()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
+            return totalPrice;
+        }else{
+            return totalPrice;
+        }
     }
 }
-/*float TotalPrice = 0;
-        TotalPrice = tvRetirement.getItems().stream().map(
-                (item) -> item.getYearlyDeposit()).reduce(TotalPrice, (accumulator, _item) -> accumulator + _item);
-
-        lbDeposit.setText(String.valueOf(TotalPrice));*/
+/**/

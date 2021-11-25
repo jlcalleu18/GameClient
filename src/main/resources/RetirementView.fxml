@@ -10,18 +10,22 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="650.0" prefWidth="571.0" stylesheets="@retirement.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.retirement.RetirementController">
+<AnchorPane fx:id="anchorPane" prefHeight="750.0" prefWidth="550.0" stylesheets="@retirement.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.retirement.RetirementController">
    <children>
-      <Label layoutX="256.0" layoutY="14.0" text="Retirement" />
-      <TableView fx:id="tvRetirement" layoutX="26.0" layoutY="95.0" prefHeight="506.0" prefWidth="520.0">
+      <Label layoutX="218.0" layoutY="14.0" text="Retirement">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <TableView fx:id="tvRetirement" layoutX="31.0" layoutY="108.0" prefHeight="556.0" prefWidth="488.0">
         <columns>
           <TableColumn prefWidth="33.0" text="No">
               <cellValueFactory>
                   <PropertyValueFactory property="no" />
               </cellValueFactory>
           </TableColumn>
-          <TableColumn fx:id="tcStartingBalance" prefWidth="105.0" text="Starting Balance">
+          <TableColumn fx:id="tcStartingBalance" prefWidth="116.0" text="Starting Balance">
             <cellValueFactory>
                 <PropertyValueFactory property="startingBalance" />
             </cellValueFactory>
@@ -31,12 +35,12 @@
                     <PropertyValueFactory property="yearlyDeposit" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="tcInterestEarned" prefWidth="117.0" text="Interest Earned">
+            <TableColumn fx:id="tcInterestEarned" prefWidth="107.0" text="Interest Earned">
                 <cellValueFactory>
                     <PropertyValueFactory property="interestEarned" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="tcEndingBalance" prefWidth="136.0" text="Ending Balance">
+            <TableColumn fx:id="tcEndingBalance" prefWidth="102.0" text="Ending Balance">
                 <cellValueFactory>
                     <PropertyValueFactory property="endingBalance" />
                 </cellValueFactory>
@@ -56,9 +60,19 @@
                </Menu>
            </menus>
        </MenuBar>
-      <TextField fx:id="txtYears" layoutX="77.0" layoutY="59.0" prefHeight="25.0" prefWidth="90.0" />
-      <Label layoutX="26.0" layoutY="63.0" text="years" />
-      <Button layoutX="225.0" layoutY="59.0" mnemonicParsing="false" onAction="#process" text="Process" />
-      <Label layoutX="26.0" layoutY="619.0" text="Calle, Jorge" />
+      <TextField fx:id="txtYears" layoutX="82.0" layoutY="67.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label layoutX="31.0" layoutY="71.0" text="years" />
+      <Button layoutX="245.0" layoutY="67.0" mnemonicParsing="false" onAction="#process" text="Process" />
+      <Label layoutX="29.0" layoutY="676.0" text="Calle, Jorge" />
+      <Label fx:id="lbStart" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="73.0" layoutY="709.0" prefHeight="17.0" prefWidth="102.0" text="Label" />
+      <Label fx:id="lbYear" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="191.0" layoutY="709.0" prefHeight="17.0" prefWidth="102.0" text="Label" />
+      <Label fx:id="lbInterest" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="287.0" layoutY="709.0" prefHeight="17.0" prefWidth="109.0" text="Label" />
+      <Label fx:id="lbEnding" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="400.0" layoutY="709.0" prefHeight="17.0" prefWidth="96.0" text="Label" />
+      <Label fx:id="lbNo" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="31.0" layoutY="709.0" prefHeight="17.0" prefWidth="30.0" text="Label" />
+      <Label fx:id="lbNo1" contentDisplay="CENTER" layoutX="252.0" layoutY="675.0" prefHeight="20.0" prefWidth="46.0" text="Totals">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

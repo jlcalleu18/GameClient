@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.MenuBar?>
-<AnchorPane prefHeight="698.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.properties.PropertiesController">
+<AnchorPane fx:id="anchorPane" prefHeight="750.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.properties.PropertiesController">
    <children>
-      <TableView fx:id="tvProperties" layoutX="21.0" layoutY="60.0" prefHeight="608.0" prefWidth="519.0">
+      <TableView fx:id="tvProperties" layoutX="32.0" layoutY="77.0" prefHeight="626.0" prefWidth="488.0" stylesheets="@properties.css">
         <columns>
-          <TableColumn fx:id="tcPropertyId" text="Property Id">
+          <TableColumn fx:id="tcPropertyId" prefWidth="69.0" text="Property Id">
               <cellValueFactory>
-                  <PropertyValueFactory property="propertyId" />
+                  <PropertyValueFactory property="id" />
               </cellValueFactory>
           </TableColumn>
-          <TableColumn fx:id="tcCost" prefWidth="86.0" text="Cost">
+          <TableColumn fx:id="tcCost" prefWidth="82.0" text="Cost">
               <cellValueFactory>
-                  <PropertyValueFactory property="cost" />
+                  <PropertyValueFactory property="investmentCost" />
               </cellValueFactory>
           </TableColumn>
-            <TableColumn fx:id="tcGrossIncome" prefWidth="85.0" text="Gross Income">
+            <TableColumn fx:id="tcGrossIncome" prefWidth="84.0" text="Gross Income">
                 <cellValueFactory>
                     <PropertyValueFactory property="grossIncome" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="tcEpenses" prefWidth="87.0" text="Expenses">
+            <TableColumn fx:id="tcEpenses" prefWidth="79.0" text="Expenses">
                 <cellValueFactory>
-                    <PropertyValueFactory property="expenses" />
+                    <PropertyValueFactory property="expense" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="tcNetIncome" prefWidth="93.0" text="Net Income">
+            <TableColumn fx:id="tcNetIncome" prefWidth="84.43673706054688" text="Net Income">
                 <cellValueFactory>
-                    <PropertyValueFactory property="netincome" />
+                    <PropertyValueFactory property="netIncome" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="tcOccupancy" prefWidth="76.0" text="Occupancy">
+            <TableColumn fx:id="tcOccupancy" prefWidth="69.92578125" text="Occupancy">
                 <cellValueFactory>
                     <PropertyValueFactory property="occupancy" />
                 </cellValueFactory>
             </TableColumn>
         </columns>
       </TableView>
-      <Label layoutX="227.0" layoutY="14.0" text="Properties">
+      <Label layoutX="222.0" layoutY="14.0" text="Properties">
          <font>
             <Font name="System Bold" size="25.0" />
          </font></Label>

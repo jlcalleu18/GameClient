@@ -1,4 +1,4 @@
-.label, .button{
+.button{
 	-fx-font-family: Calibri;
 	-fx-font-size: 15pt;
 }
@@ -25,9 +25,13 @@
 
 #lblURL {
     -fx-alignment: center ;
+    -fx-font-family: Calibri;
+    -fx-font-size: 15pt;
 }
 
 
 #lblStatus {
+    -fx-font-family: Calibri;
+    -fx-font-size: 15pt;
     -fx-alignment: center ;
 }
