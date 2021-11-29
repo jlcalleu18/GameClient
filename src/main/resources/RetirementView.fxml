@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<?import edu.citytech.retirement.NumberFormatCell?>
 <AnchorPane fx:id="anchorPane" prefHeight="750.0" prefWidth="550.0" stylesheets="@retirement.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.retirement.RetirementController">
    <children>
       <Label layoutX="218.0" layoutY="14.0" text="Retirement">
@@ -35,7 +36,12 @@
                     <PropertyValueFactory property="yearlyDeposit" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="tcInterestEarned" prefWidth="107.0" text="Interest Earned">
+            <TableColumn  prefWidth="107.0" text="Interest Earned">
+                <cellFactory>
+                    <NumberFormatCell>
+                        <format>$##,###.00</format>
+                    </NumberFormatCell>
+                </cellFactory>
                 <cellValueFactory>
                     <PropertyValueFactory property="interestEarned" />
                 </cellValueFactory>
