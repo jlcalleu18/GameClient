@@ -1,7 +1,9 @@
 package edu.citytech.states;
 
 import com.jbbwebsolutions.http.utility.JSONGet;
-import edu.citytech.states.model.*;
+import edu.citytech.states.model.Property;
+import edu.citytech.states.model.TriState;
+
 import java.util.stream.Stream;
 
 

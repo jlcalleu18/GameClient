@@ -10,7 +10,6 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
@@ -163,9 +162,10 @@ public class TriStateController extends MainController implements Initializable 
             Predicate<TriState>  temp = x -> x.getState().equals(items);
             triState= triState.or(temp);
         }
-        System.out.println(selectedItem.size());
+        lblTitleState.setText("");
         this.refreshData(e->true);
         this.refreshPieChar(triState);
         this.pieTriState.getData().forEach(this::clickOnPie);
+        System.out.println(selectedItem.size());
     }
 }
