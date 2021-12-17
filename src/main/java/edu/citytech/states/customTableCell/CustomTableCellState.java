@@ -1,23 +1,23 @@
-package edu.citytech.retirement;
+package edu.citytech.states.customTableCell;
 
 import javafx.scene.control.TableCell;
 
 import java.text.DecimalFormat;
 
-public class CustomTableCell extends TableCell {
+public class CustomTableCellState extends TableCell {
 
     private String format = "###,###.00";
     private DecimalFormat decimalFormat = new DecimalFormat(format);
 
-    public CustomTableCell(){}
-    public CustomTableCell(String format){
+    public CustomTableCellState(){}
+    public CustomTableCellState(String format){
         this.format = format;
         this.decimalFormat = new DecimalFormat(format);
     }
     @Override
     protected void updateItem(Object item, boolean isEmpty) {
         super.updateItem(item, isEmpty);
-        System.out.println("item: "+item+ " empty: "+isEmpty);
+//        System.out.println("item: "+item+ " empty: "+isEmpty);
         setText(null);
         if (!isEmpty)
             setText(decimalFormat.format(item));

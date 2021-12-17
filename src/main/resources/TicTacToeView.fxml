@@ -36,6 +36,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#growthRateMode" text="Growth Rate" />
                   <MenuItem mnemonicParsing="false" onAction="#retirementMode" text="Retirement" />
                   <MenuItem mnemonicParsing="false" onAction="#propertiesMode" text="Properties" />
+                  <MenuItem mnemonicParsing="false" onAction="#triStateMode" text="TriState" />
                </items>
             </Menu>
          </menus>

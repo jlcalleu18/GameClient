@@ -74,19 +74,19 @@ public class RetirementController extends MainController implements Initializabl
 
 
 /*        tcStartingBalance.setCellFactory(column ->{
-            var cell = new CustomTableCell("$00,000.00");
+            var cell = new CustomTableCellState("$00,000.00");
             return cell;
         });
         tcYearlyDeposit.setCellFactory(column ->{
-            var cell = new CustomTableCell("$##,###.00");
+            var cell = new CustomTableCellState("$##,###.00");
             return cell;
         });
         tcInterestEarned.setCellFactory(column ->{
-            var cell = new CustomTableCell("00,000.00");
+            var cell = new CustomTableCellState("00,000.00");
             return cell;
         });
         tcEndingBalance.setCellFactory(column ->{
-            var cell = new CustomTableCell();
+            var cell = new CustomTableCellState();
             return cell;
         });*/
 
@@ -96,6 +96,7 @@ public class RetirementController extends MainController implements Initializabl
 
     @FXML
     void process(ActionEvent event) {
+        tvRetirement.getItems().clear();
         String strYears = txtYears.getText();
         int years = Integer.parseInt(strYears);
         populateTable(years);
@@ -128,11 +129,6 @@ public class RetirementController extends MainController implements Initializabl
             return totalPrice;
         }else{
             return totalPrice;
-            //two way to do this ^
-
-            /*  totalPrice = tvRetirement.getItems().stream().map(
-                    (item) -> item.getEndingBalance()).reduce(totalPrice, (accumulator, _item) -> accumulator + _item);
-            return totalPrice;*/
         }
     }
 }

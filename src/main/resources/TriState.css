@@ -1,0 +1,15 @@
+
+.table-column{
+    -fx-alignment: CENTER-RIGHT;
+}
+#tcId, #tcState{
+    -fx-alignment: CENTER;
+}
+#lblTitle, #lblTitleState{
+    -fx-font-size: 17pt;
+    -fx-alignment: center ;
+}
+#lblMessage{
+    -fx-font-size: 12pt;
+    -fx-alignment: center ;
+}

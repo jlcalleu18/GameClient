@@ -40,9 +40,6 @@ public class ABCController extends MainController implements Initializable {
     @FXML
     private ComboBox<Model> cbHighlight;
 
-//    @FXML
-//    private AnchorPane anchorPane;
-
     @FXML
     void selectionMode(ActionEvent event) {
         Node node = (Node)event.getSource();
@@ -96,7 +93,7 @@ public class ABCController extends MainController implements Initializable {
             list.add(new Model("e", "even numbers"));
             list.add(new Model("o", "odd numbers"));
             list.add(new Model("6", "every 6 numbers"));
-            list.add(new Model("con", "contains #4 or 9"));
+            list.add(new Model("con", "contains 4 or 9"));
         }
         var $123List = FXCollections.observableArrayList(list);
         cbHighlight.setItems($123List);

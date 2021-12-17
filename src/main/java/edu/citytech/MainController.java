@@ -32,7 +32,11 @@ public class MainController {
     }
     @FXML
     void propertiesMode(ActionEvent event) {
-        selectMode("PropertiesView.fxml", "Properties View");
+        selectMode("PropertiesView.fxml", "Property View");
+    }
+    @FXML
+    void triStateMode(ActionEvent event) {
+        selectMode("TriStateView.fxml", "TriState View");
     }
 
 

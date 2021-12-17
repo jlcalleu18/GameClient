@@ -33,7 +33,7 @@ public class Properties {
 
     @Override
     public String toString() {
-        return "Properties{" +
+        return "Property{" +
                 "count=" + count +
                 ", investments=" + Arrays.toString(investments) +
                 ", netIncome=" + netIncome +

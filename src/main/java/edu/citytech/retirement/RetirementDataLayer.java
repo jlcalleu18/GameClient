@@ -15,7 +15,7 @@ public class RetirementDataLayer {
     }
 
     public static void main(String[] args) {
-        var years = RetirementDataLayer.getRetirement(10).getYears();
+        var years = RetirementDataLayer.getRetirement(20).getYears();
         Stream.of(years).forEach(System.out::println);
     }
 }
