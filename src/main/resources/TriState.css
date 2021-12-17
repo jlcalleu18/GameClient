@@ -5,9 +5,13 @@
 #tcId, #tcState{
     -fx-alignment: CENTER;
 }
-#lblTitle, #lblTitleState{
+#lblTitle{
     -fx-font-size: 17pt;
     -fx-alignment: center ;
+}
+#lblTitleState{
+    -fx-font-size: 17pt;
+    -fx-alignment: CENTER-LEFT ;
 }
 #lblMessage{
     -fx-font-size: 12pt;

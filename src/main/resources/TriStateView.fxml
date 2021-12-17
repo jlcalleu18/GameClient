@@ -61,7 +61,7 @@
                </Menu>
            </menus>
        </MenuBar>
-      <Label fx:id="lblTitleState" contentDisplay="CENTER" layoutX="531.0" layoutY="14.0" prefHeight="28.0" prefWidth="32.0" />
+      <Label fx:id="lblTitleState" contentDisplay="CENTER" layoutX="531.0" layoutY="14.0" prefHeight="28.0" prefWidth="61.0" />
       <Label fx:id="lblMessage" layoutX="20.0" layoutY="564.0" prefHeight="17.0" prefWidth="369.0" />
    </children>
 </AnchorPane>

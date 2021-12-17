@@ -84,7 +84,7 @@
                         <archive>
                             <manifest>
                                 <addClasspath>true</addClasspath>
-                                <mainClass>edu.citytech.properties.PropertiesMain</mainClass>
+                                <mainClass>edu.citytech.states.TriStateMain</mainClass>
                             </manifest>
                         </archive>
                     </configuration>

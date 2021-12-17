@@ -7,6 +7,7 @@
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/retirement/RetirementDataLayer.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/counter/ABCCounterService.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/retirement/CustomTableCell.java
+/Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/states/model/Property.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/retirement/model/Year.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/properties/PropertiesMain.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/abccounter/model/Model.java
@@ -14,14 +15,13 @@
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/MainController.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/states/TriStateController.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/properties/model/Investments.java
+/Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/states/customTableCell/CustomTableCellState.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/retirement/RetirementMain.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/growthrate/GrowthRate.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/states/TriStateMain.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/growthrate/GrowthController.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/states/TriStateDataLayer.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/abccounter/ABCMain.java
-/Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/piechart/TriState.java
-/Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/states/TriState.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/tictactoe/TicTacToeController.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/growthrate/GrowthRateMain.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/retirement/NumberFormatCell.java
@@ -31,4 +31,5 @@
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/properties/PropertiesController.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/piechart/TriStateDataSource.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/properties/PropertiesDataLayer.java
+/Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/states/model/TriState.java
 /Users/jorgecalle/Dropbox (City Tech)/FALL 2021/CST 3613 java FX/04.GameClient/src/main/java/edu/citytech/retirement/model/Retirement.java
