@@ -2,4 +2,4 @@
 
 ![Alt Text](https://thumbs.gfycat.com/BoringAgonizingCow-max-1mb.gif)
 
-<img src="https://thumbs.gfycat.com/BoringAgonizingCow-max-1mb.gif" width="250" height="250"/>
+<img src="https://thumbs.gfycat.com/BoringAgonizingCow-max-1mb.gif" width="500" height="500"/>
