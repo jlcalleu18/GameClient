@@ -1,3 +1,3 @@
 # GameClient
 
-![Alt Text](https://gfycat.com/boringagonizingcow)
+![Alt Text](https://thumbs.gfycat.com/BoringAgonizingCow-size_restricted.gif)
