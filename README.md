@@ -1,8 +1,8 @@
-# GameClient
-## Demo
+# GameClient ⭐️
+## ✨ Demo
 [<img src="readmeFiles/program.gif" width="500" height="400">](readmeFiles/home.mp4)
 
-# Built With
+# 💻 Built With
 
 * [JavaFX](https://openjfx.io) - GUI Framework
 * [Scene Builder](https://gluonhq.com/products/scene-builder/) - Design JavaFX application
@@ -12,7 +12,7 @@
   * [Java Server](https://github.com/jlcalleu18/GameServer) - Server
 
 JavaFX UI controls
-## Demo 
+## ✨ Demo 
 * Running [Java microserver](https://github.com/jlcalleu18/GameServer)
  <img src="readmeFiles/javaServer.gif" width="500" height="300">
  
@@ -21,3 +21,4 @@ JavaFX UI controls
  
 * Database in Derby
  <img src="readmeFiles/derby.gif" width="600" height="600">
+
