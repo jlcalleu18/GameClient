@@ -5,3 +5,5 @@
 </video>
 
 <iframe width="500" height="400" src="readmeFiles/home.mov"></iframe>
+
+<embed src="readmeFiles/home.mov" width="400px" height="200px">
