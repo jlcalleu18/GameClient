@@ -12,6 +12,8 @@
 
 JavaFX UI controls
 ## Demo 
+* Running [Java microserver]
+* <img src="readmeFiles/javaServer.gif" width="300" height="400">
 <img src="readmeFiles/derby.gif" width="300" height="400">
 JavaFX - GUI Framework
 JUnit5 - Testing Framework
