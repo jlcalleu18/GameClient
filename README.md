@@ -14,10 +14,11 @@ JavaFX UI controls
 ## Demo 
 * Running [Java microserver](https://github.com/jlcalleu18/GameServer)
  <img src="readmeFiles/javaServer.gif" width="500" height="300">
+ 
 * Start Derby Network Server
- <img src="readmeFiles/startDerby.gif" width="500" height="600">
+ <img src="readmeFiles/startDerby.gif" width="500" height="300">
 * Start Derby Network Server
- <img src="readmeFiles/derby.gif" width="500" height="600">
+ <img src="readmeFiles/derby.gif" width="600" height="600">
  
  
 JavaFX - GUI Framework
