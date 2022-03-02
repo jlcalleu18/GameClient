@@ -17,11 +17,6 @@ JavaFX UI controls
  
 * Start Derby Network Server
  <img src="readmeFiles/startDerby.gif" width="500" height="300">
-* Start Derby Network Server
+ 
+* Database in Derby
  <img src="readmeFiles/derby.gif" width="600" height="600">
- 
- 
-JavaFX - GUI Framework
-JUnit5 - Testing Framework
-Maven - Dependency Management
-SLF4J - Logging API
