@@ -5,7 +5,7 @@
 
 *[Apache Derby](https://db.apache.org/derby/) - Relational Database
 ##Demo
-<img src="readmeFiles/derby.gif" width="500" height="400">
+<img src="readmeFiles/derby.gif" width="200" height="200">
 JavaFX - GUI Framework
 JUnit5 - Testing Framework
 Maven - Dependency Management
