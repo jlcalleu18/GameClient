@@ -61,26 +61,26 @@ public class TriStateControllerOtherWay extends MainController implements Initia
     @FXML
     private TableColumn<Property, Float> tcNetIncome;
 
-    HashSet<String> set = new HashSet<>();
+
 
     TriState[] gList = TriStateDataLayer.getData();
     Predicate<TriState> nyTriState = x -> x.getState().equals("CT") ||
             x.getState().equals("NJ") || x.getState().equals("NY");
 
-
+    HashSet<String> set = new HashSet<>();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.refreshData(e -> true);
         btnRefresh.setVisible(true);
         this.refreshPie(nyTriState);
         this.pieTriState.getData().forEach(this::clickOnPie);
-
+        format();
         Arrays.stream(gList).forEach(e -> {
             var checkBox = new CheckBox(e.getState());
             checkBox.setPrefSize(60, 15);
             this.fpStates.getChildren().add(checkBox);
 
-            format();
+
 
             EventHandler applyEvent = new EventHandler<ActionEvent>() {
                 @Override
@@ -144,21 +144,15 @@ public class TriStateControllerOtherWay extends MainController implements Initia
         tcCost.setCellFactory(column -> {
             var cell = new CustomTableCellState("##,###.00");
             return cell;
-
         });
-
         tcNetIncome.setCellFactory(column -> {
             var cell = new CustomTableCellState("##,###.00");
             return cell;
-
         });
-
         tcPercentage.setCellFactory(column -> {
             var cell = new CustomTableCellState("#%");
             return cell;
-
         });
-
     }
 
     void clickOnPie(PieChart.Data data) {

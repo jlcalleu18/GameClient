@@ -135,11 +135,26 @@ public class TriStateController extends MainController implements Initializable 
     }
 
 
-    void format(){
-        tvStateInfo.getColumns().stream().skip(1).forEach(tableColumn ->{
-            tcCost.setCellFactory(c -> new CustomTableCellState("$##,###.00"));
-            tcNetIncome.setCellFactory(c -> new CustomTableCellState("$##,###.00"));
-            tcPercentage.setCellFactory(c -> new CustomTableCellState("#%"));
+//    void format(){
+//        tvStateInfo.getColumns().stream().skip(1).forEach(tableColumn ->{
+//            tcCost.setCellFactory(c -> new CustomTableCellState("$##,###.00"));
+//            tcNetIncome.setCellFactory(c -> new CustomTableCellState("$##,###.00"));
+//            tcPercentage.setCellFactory(c -> new CustomTableCellState("#%"));
+//        });
+//    }
+    void format() {
+
+        tcCost.setCellFactory(column -> {
+            var cell = new CustomTableCellState("##,###.00");
+            return cell;
+        });
+        tcNetIncome.setCellFactory(column -> {
+            var cell = new CustomTableCellState("##,###.00");
+            return cell;
+        });
+        tcPercentage.setCellFactory(column -> {
+            var cell = new CustomTableCellState("#%");
+            return cell;
         });
     }
 

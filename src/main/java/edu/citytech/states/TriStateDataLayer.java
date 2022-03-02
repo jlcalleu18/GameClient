@@ -32,7 +32,7 @@ public class TriStateDataLayer {
     public static void main(String[] args) {
         var states = TriStateDataLayer.getData();
         Stream.of(states).forEach(System.out::println);
-
+        getPropertiesData();
 //        var properties = TriStateDataLayer.getPropertiesData();
 //        Stream.of(properties).forEach(System.out::println);
 
