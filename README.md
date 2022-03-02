@@ -12,9 +12,14 @@
 
 JavaFX UI controls
 ## Demo 
-* Running [Java microserver]
-* <img src="readmeFiles/javaServer.gif" width="300" height="400">
-<img src="readmeFiles/derby.gif" width="300" height="400">
+* Running [Java microserver](https://github.com/jlcalleu18/GameServer)
+ <img src="readmeFiles/javaServer.gif" width="500" height="300">
+* Start Derby Network Server
+ <img src="readmeFiles/startDerby.gif" width="500" height="600">
+* Start Derby Network Server
+ <img src="readmeFiles/derby.gif" width="500" height="600">
+ 
+ 
 JavaFX - GUI Framework
 JUnit5 - Testing Framework
 Maven - Dependency Management
