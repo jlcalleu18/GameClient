@@ -1,3 +1,12 @@
 # GameClient
-[<img src="readmeFiles/program.gif" width="500" height="400">](https://user-images.githubusercontent.com/57515225/156452255-e54cb54a-17aa-4880-a718-7568d02f620f.mov | width="500px" height="400px")
+[<img src="readmeFiles/program.gif" width="500" height="400">](readmeFiles/home.mp4)
 
+# Built With
+
+*[Apache Derby](https://db.apache.org/derby/) - Relational Database
+##Demo
+<img src="readmeFiles/derby.gif" width="200" height="200">
+JavaFX - GUI Framework
+JUnit5 - Testing Framework
+Maven - Dependency Management
+SLF4J - Logging API
