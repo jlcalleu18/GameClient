@@ -1,6 +1,7 @@
 # GameClient ⭐️
 ## ✨ Demo
-[<img src="readmeFiles/program.gif" width="500" height="400">](readmeFiles/home.mp4)
+[](https://user-images.githubusercontent.com/57515225/156465227-16ad8c74-81f3-4e0b-8fd5-3265225292bf.mp4)
+
 
 # 💻 Built With
 
@@ -11,14 +12,13 @@
 * [Spring boot](https://spring.io/projects/spring-boot) - Microservice
   * [Java Server](https://github.com/jlcalleu18/GameServer) - Server
 
-JavaFX UI controls
 ## ✨ Demo 
-* Running [Java microserver](https://github.com/jlcalleu18/GameServer)
- <img src="readmeFiles/javaServer.gif" width="500" height="300">
+* Running [Java microserver](https://github.com/jlcalleu18/GameServer) ✅
+ <img src="readmeFiles/javaServer.gif" width="500" height="300"> 
  
-* Start Derby Network Server
+* Start Derby Network Server ✅
  <img src="readmeFiles/startDerby.gif" width="500" height="300">
  
-* Database in Derby
+* Database in Derby ✅
  <img src="readmeFiles/derby.gif" width="600" height="600">
 
