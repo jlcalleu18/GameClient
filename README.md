@@ -3,9 +3,9 @@
 
 # Built With
 
-*[Apache Derby](https://db.apache.org/derby/) - Relational Database
-##Demo
-<img src="readmeFiles/derby.gif" width="200" height="200">
+* [Apache Derby](https://db.apache.org/derby/) - Relational Database
+## Demo
+<img src="readmeFiles/derby.gif" width="300" height="400">
 JavaFX - GUI Framework
 JUnit5 - Testing Framework
 Maven - Dependency Management
