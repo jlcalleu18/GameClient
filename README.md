@@ -1,3 +1,3 @@
 # GameClient
 
-![](readmeFiles/program.gif)
+![](readmeFiles/program.gif | width=100)
